@@ -1,0 +1,23 @@
+val list = List(50,30,22,3,5,23,13)
+
+LAST
+1)def lastBul(list :List[Int]): Int = {
+  return list(list.length-1)
+  }
+
+
+2)def last (list:List[Int]):Int ={
+  if(list.isEmpty) 0
+  else if(list.length == 1) list.head
+  else last(list.tail)
+}
+
+
+SIZE
+1)def size (list:List[Int]):Int ={
+  if(list.isEmpty) 0
+  else size(list.tail) + 1
+
+}
+
+

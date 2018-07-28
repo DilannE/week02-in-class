@@ -21,3 +21,11 @@ SIZE
 }
 
 
+REVERSE
+1)def reverse(list : List[Int]) : List[Int] = {
+    if(list.isEmpty) List()
+    else  reverse(list.tail) ::: List(list.head)
+}
+
+
+
